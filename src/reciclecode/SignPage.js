@@ -3,8 +3,8 @@ import React from "react";
 import { Link } from 'react-router-dom';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleLeft, faEnvelope, faUnlockAlt } from "@fortawesome/free-solid-svg-icons";
-import { Col, Row, Card, Button, Container } from '@themesberg/react-bootstrap';
+import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import { Col, Row, Card, Container } from '@themesberg/react-bootstrap';
 
 import { Routes } from "../routes";
 import BgImage from "../assets/img/illustrations/signin.svg";
