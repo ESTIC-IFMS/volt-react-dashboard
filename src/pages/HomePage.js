@@ -9,13 +9,13 @@ import DashboardOverview from "./dashboard/DashboardOverview";
 import Transactions from "./Transactions";
 import Settings from "./Settings";
 import BootstrapTables from "./tables/BootstrapTables";
-import Signin from "./examples/Signin";
-import Signup from "./examples/Signup";
-import ForgotPassword from "./examples/ForgotPassword";
-import ResetPassword from "./examples/ResetPassword";
-import Lock from "./examples/Lock";
-import NotFoundPage from "./examples/NotFound";
-import ServerError from "./examples/ServerError";
+import Signin from "./conta/Signin";
+import Signup from "./conta/Signup";
+import ForgotPassword from "./conta/ForgotPassword";
+import ResetPassword from "./conta/ResetPassword";
+import Lock from "./conta/Lock";
+import NotFoundPage from "./conta/NotFound";
+import ServerError from "./conta/ServerError";
 
 // documentation pages
 import DocsOverview from "./documentation/DocsOverview";
