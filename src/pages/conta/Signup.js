@@ -7,10 +7,11 @@ import { Link } from 'react-router-dom';
 
 import { Routes } from "../../routes";
 
-import FormGroup from "../../reciclecode/FormGroup.js";
+import FormInput from "../../reciclecode/FormInput.js";
 import FormHeader from "../../reciclecode/FormHeader.js";
 import SignPage from "../../reciclecode/SignPage.js";
 
+import formsInputData from './SignupForm.js'
 /*
 Outros signup/login
 
@@ -33,42 +34,10 @@ Não sei se vai usar
 */
 
 // Dados para criar cada campo do form
-const formsInputData = [
-  {
-    id:"email", 
-    className:'', 
-    textLabel:"Seu Email", 
-    icon:faEnvelope,
-    type:"email", 
-    placeholder:"exemplo@exemplo.com", 
-    control: {
-      required:true,
-      autoFocus: true
-    }
-  },
-  {
-    id:"password", 
-    className:'', 
-    textLabel: "Sua Senha", 
-    icon:faUnlockAlt,
-    type:"password", 
-    placeholder:"Senha1234", 
-    control: {
-      required:true
-    }
-  },
-  {
-    id:"password", 
-    className:'', 
-    textLabel: "Confirme sua senha", 
-    icon:faUnlockAlt,
-    type:"password", 
-    placeholder:"Senha12345", 
-    control: {
-      required:true
-    }
-  }
-]
+
+const teste = (e) => {
+  console.log(e)
+}
 
 const restoPagina = () => {
   return (
@@ -76,14 +45,27 @@ const restoPagina = () => {
 
   <FormHeader/>
 
-  <Form className="mt-4">
+  <Form className="mt-4" onSubmit={teste}>
     {
       formsInputData.map(
         props => {
-          return (<FormGroup formProps={props} />   )
+          return (<FormInput formProps={props} />   )
         }
       )
     }                      
+
+    <Form.Group id="sex" className="mb-4">
+      <Form.Label>Sexo</Form.Label>
+
+      <Form.Select>
+        <option defaultValue>Selecione...</option>
+        <option>Masculino</option>
+        <option>Feminino</option>
+
+        <Form.Control required />
+      </Form.Select>
+
+    </Form.Group>
 
     <FormCheck type="checkbox" className="d-flex mb-4">
       <FormCheck.Input required id="terms" className="me-2" />
@@ -92,7 +74,7 @@ const restoPagina = () => {
       </FormCheck.Label>
     </FormCheck>
 
-    <Button variant="primary" type="submit" className="w-100">
+    <Button variant="primary" type="submit" className="w-100" onSubmit={teste}>
       Sign up
     </Button>
   </Form>

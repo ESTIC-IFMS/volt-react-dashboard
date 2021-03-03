@@ -13,7 +13,7 @@ export default ({formProps}) =>{
           <FontAwesomeIcon icon={formProps.icon} />
         </InputGroup.Text>
 
-        <Form.Control {...formProps.control} type={formProps.type} placeholder={formProps.placeholder} />
+        <Form.Control {...formProps.control} />
       </InputGroup>
 
     </Form.Group>
