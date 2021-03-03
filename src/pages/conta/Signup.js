@@ -41,8 +41,10 @@ const formsInputData = [
     icon:faEnvelope,
     type:"email", 
     placeholder:"exemplo@exemplo.com", 
-    required:true,
-    autoFocus: true
+    control: {
+      required:true,
+      autoFocus: true
+    }
   },
   {
     id:"password", 
@@ -51,7 +53,9 @@ const formsInputData = [
     icon:faUnlockAlt,
     type:"password", 
     placeholder:"Senha1234", 
-    required:true
+    control: {
+      required:true
+    }
   },
   {
     id:"password", 
@@ -60,7 +64,9 @@ const formsInputData = [
     icon:faUnlockAlt,
     type:"password", 
     placeholder:"Senha12345", 
-    required:true
+    control: {
+      required:true
+    }
   }
 ]
 
