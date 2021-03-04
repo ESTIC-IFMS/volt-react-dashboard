@@ -1,20 +1,14 @@
 import React from "react";
 
-import {Form, InputGroup } from '@themesberg/react-bootstrap';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {Form } from '@themesberg/react-bootstrap';
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default ({formProps}) =>{
+export default ({id, className, label, inputComponent}) =>{
   return (
-    <Form.Group id={formProps.id} className={`mb-4 ${formProps.className}`}>
-      <Form.Label>{formProps.textLabel}</Form.Label>
+    <Form.Group id={id} className={`mb-4 ${className != undefined ? className : ''}`}>
+      <Form.Label>{label}</Form.Label>
 
-      <InputGroup>
-        <InputGroup.Text>
-          <FontAwesomeIcon icon={formProps.icon} />
-        </InputGroup.Text>
-
-        <Form.Control {...formProps.control} />
-      </InputGroup>
+      {inputComponent()}
 
     </Form.Group>
   )
