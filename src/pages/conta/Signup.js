@@ -140,7 +140,15 @@ const restoPagina = () => {
       }
     }/>
 
-
+    <FormInput id='teacher_code' className='' label='Codigo do Professor' inputComponent={
+      () => {
+        return (
+          <InputGroup>
+           <Form.Control required type="text" placeholder="CODIGO" />
+          </InputGroup>   
+        )
+      }
+    }/>
 
     <FormInput id='password' className='' label='Sua Senha' inputComponent={
       () => {
@@ -162,12 +170,10 @@ const restoPagina = () => {
       }
     }/>
 
-    <FormInput id='teacher_code' className='' label='Codigo do Professor' inputComponent={
+    <FormInput id='photo' className='' label='Foto' inputComponent={
       () => {
         return (
-          <InputGroup>
-           <Form.Control required type="text" placeholder="CODIGO" />
-          </InputGroup>   
+         <Form.Control required type="file" />
         )
       }
     }/>
