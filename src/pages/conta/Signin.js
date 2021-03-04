@@ -15,53 +15,53 @@ const restoPagina = () => {
     <div className="bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
 
       <div className="text-center text-md-center mb-4 mt-md-0">
-        <h3 className="mb-0">Sign in to our platform</h3>
+        <h3 className="mb-0">Entrar</h3>
       </div>
 
       <Form className="mt-4">
         <Form.Group id="email" className="mb-4">
-          <Form.Label>Your Email</Form.Label>
+          <Form.Label>Seu Email</Form.Label>
           <InputGroup>
             <InputGroup.Text>
               <FontAwesomeIcon icon={faEnvelope} />
             </InputGroup.Text>
-            <Form.Control autoFocus required type="email" placeholder="example@company.com" />
+            <Form.Control autoFocus required type="email" placeholder="professor@ifms.edu.br" />
           </InputGroup>
         </Form.Group>
 
         <Form.Group>
           <Form.Group id="password" className="mb-4">
-            <Form.Label>Your Password</Form.Label>
+            <Form.Label>Senha</Form.Label>
             <InputGroup>
               <InputGroup.Text>
                 <FontAwesomeIcon icon={faUnlockAlt} />
               </InputGroup.Text>
-              <Form.Control required type="password" placeholder="Password" />
+              <Form.Control required type="password" placeholder="Senha" />
             </InputGroup>
           </Form.Group>
 
           <div className="d-flex justify-content-between align-items-center mb-4">
             <Form.Check type="checkbox">
               <FormCheck.Input id="defaultCheck5" className="me-2" />
-              <FormCheck.Label htmlFor="defaultCheck5" className="mb-0">Remember me</FormCheck.Label>
+              <FormCheck.Label htmlFor="defaultCheck5" className="mb-0">Lembre de mim</FormCheck.Label>
             </Form.Check>
-            <Card.Link className="small text-end">Lost password?</Card.Link>
+            <Card.Link className="small text-end">Esqueci a senha</Card.Link>
           </div>
         </Form.Group>
 
         <Button variant="primary" type="submit" className="w-100">
-          Sign in
+          Entrar  
         </Button>
       </Form>
 
-      <div className="mt-3 mb-4 text-center">
+      {/* <div className="mt-3 mb-4 text-center">
         <span className="fw-normal">or login with</span>
       </div>
 
       <div className="d-flex justify-content-center my-4">
         <Button variant="outline-light" className="btn-icon-only btn-pill text-facebook me-2">
           <FontAwesomeIcon icon={faFacebookF} />
-        </Button>
+        </Button> 
 
         <Button variant="outline-light" className="btn-icon-only btn-pill text-twitter me-2">
           <FontAwesomeIcon icon={faTwitter} />
@@ -70,13 +70,13 @@ const restoPagina = () => {
         <Button variant="outline-light" className="btn-icon-only btn-pil text-dark">
           <FontAwesomeIcon icon={faGithub} />
         </Button>
-      </div>
+      </div> */}
 
       <div className="d-flex justify-content-center align-items-center mt-4">
         <span className="fw-normal">
-          Not registered?
+          {/* Not registered? */}
           <Card.Link as={Link} to={Routes.Signup.path} className="fw-bold">
-            {` Create account `}
+            {` Crie uma conta `}
           </Card.Link>
         </span>
       </div>
