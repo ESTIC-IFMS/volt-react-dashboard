@@ -5,7 +5,7 @@ import {Form } from '@themesberg/react-bootstrap';
 
 export default ({id, className, label, inputComponent}) =>{
   return (
-    <Form.Group id={id} className={`mb-4 ${className != undefined ? className : ''}`}>
+    <Form.Group id={id} className={`mb-2 ${className != undefined ? className : ''}`}>
       <Form.Label>{label}</Form.Label>
 
       {inputComponent()}
