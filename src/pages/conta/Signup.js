@@ -21,7 +21,7 @@ const restoPagina = () => {
   return (
 <div className="mb-4 mb-lg-0 bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
 
-  <FormHeader/>
+  <FormHeader  text="Cadastro"/>
 
   <Form className="mt-4" onSubmit={teste}>
 
@@ -33,12 +33,18 @@ const restoPagina = () => {
       <Form.Control type='hidden' value='1' name='user_id'/>
     </Form.Group>
 
-    <FormInput id='name' className='' label='Nome Completo' inputComponent={
+    <FormInput id='name' className='' label='Nome' inputComponent={
       () => {
         return(
-          <InputGroup>
-            <Form.Control required type='text' name='username' placeholder='Nome Completo' onChange={teste} />
-          </InputGroup>
+          <div>
+            <InputGroup >            
+              <Form.Control required type='text' name='firstname' placeholder='Nome' onChange={teste} />
+            </InputGroup>
+
+            <InputGroup>            
+              <Form.Control required type='text' name='lastname' placeholder='Sobrenome' onChange={teste} />
+            </InputGroup>
+          </div>
         )
       }
     } />
