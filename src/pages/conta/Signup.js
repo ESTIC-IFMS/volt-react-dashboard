@@ -10,7 +10,7 @@ import { Routes } from "../../routes";
 import FormInput from "../../reciclecode/FormInput.js";
 import FormHeader from "../../reciclecode/FormHeader.js";
 import SignPage from "../../reciclecode/SignPage.js";
-
+import PasswordConfirmer from "../../components/form/PasswordConfirmer.js"
 // Posteriormente, transformar a senha, confirmar senha em um componente
 
 const teste = (e) => {
@@ -156,25 +156,7 @@ const restoPagina = () => {
       }
     }/>
 
-    <FormInput id='password' className='' label='Sua Senha' inputComponent={
-      () => {
-        return (
-          <InputGroup>
-            <Form.Control required type="password" placeholder="Senha" />
-          </InputGroup>   
-        )
-      }
-    }/>
-
-    <FormInput id='password_confirm' className='' label='Confirme sua senha' inputComponent={
-      () => {
-        return (
-          <InputGroup>
-            <Form.Control required type="password" placeholder="Senha" />
-          </InputGroup>   
-        )
-      }
-    }/>
+    <PasswordConfirmer/>
 
     <FormInput id='photo' className='' label='Foto' inputComponent={
       () => {
