@@ -6,18 +6,18 @@ import { Col, Row, Button, Dropdown, ButtonGroup } from '@themesberg/react-boots
 
 import { CounterWidget, CircleChartWidget, BarChartWidget, TeamMembersWidget, ProgressTrackWidget, RankingWidget, SalesValueWidget, SalesValueWidgetPhone, AcquisitionWidget } from "../../components/Widgets";
 import { PageVisitsTable } from "../../components/Tables";
-import { trafficShares, totalOrders } from "../../data/charts";
+import { rackingTurmas, totalOrders } from "../../data/charts";
 
 export default () => {
   return (
     <>
       <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
         <Dropdown className="btn-toolbar">
-          <Dropdown.Toggle as={Button} variant="primary" size="sm" className="me-2">
-            <FontAwesomeIcon icon={faPlus} className="me-2" />New Task
-          </Dropdown.Toggle>
+          {/* <Dropdown.Toggle as={Button} variant="primary" size="sm" className="me-2">
+            <FontAwesomeIcon icon={faPlus} className="me-2" />Adicionar turma 
+          </Dropdown.Toggle> */}
           <Dropdown.Menu className="dashboard-dropdown dropdown-menu-left mt-2">
-            <Dropdown.Item className="fw-bold">
+            {/* <Dropdown.Item className="fw-bold">
               <FontAwesomeIcon icon={faTasks} className="me-2" /> New Task
             </Dropdown.Item>
             <Dropdown.Item className="fw-bold">
@@ -25,18 +25,18 @@ export default () => {
             </Dropdown.Item>
             <Dropdown.Item className="fw-bold">
               <FontAwesomeIcon icon={faUserShield} className="me-2" /> Preview Security
-            </Dropdown.Item>
+            </Dropdown.Item> */}
 
             <Dropdown.Divider />
 
-            <Dropdown.Item className="fw-bold">
+            {/* <Dropdown.Item className="fw-bold">
               <FontAwesomeIcon icon={faRocket} className="text-danger me-2" /> Upgrade to Pro
-            </Dropdown.Item>
+            </Dropdown.Item> */}
           </Dropdown.Menu>
         </Dropdown>
 
         <ButtonGroup>
-          <Button variant="outline-primary" size="sm">Share</Button>
+          <Button variant="outline-primary" size="sm">Editar</Button>
           <Button variant="outline-primary" size="sm">Export</Button>
         </ButtonGroup>
       </div>
@@ -80,8 +80,8 @@ export default () => {
 
         <Col xs={12} sm={6} xl={4} className="mb-4">
           <CircleChartWidget
-            title="Traffic Share"
-            data={trafficShares} />
+            title="Racking Turmas"
+            data={rackingTurmas} />
         </Col>
       </Row>
 
