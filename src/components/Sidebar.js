@@ -97,7 +97,7 @@ export default (props = {}) => {
               </Nav.Link>
             </div>
             <Nav className="flex-column pt-3 pt-md-0">
-              <NavItem title="Volt React" link={Routes.Presentation.path} image={ReactHero} />
+              <NavItem title="Perfil" link={Routes.Presentation.path} image={ReactHero} />
 
               <NavItem title="Overview" link={Routes.DashboardOverview.path} icon={faChartPie} />
               <NavItem title="Transactions" icon={faHandHoldingUsd} link={Routes.Transactions.path} />
@@ -107,7 +107,7 @@ export default (props = {}) => {
                 <NavItem title="Bootstrap Table" link={Routes.BootstrapTables.path} />
               </CollapsableNavItem>
 
-              <CollapsableNavItem eventKey="examples/" title="Page Examples" icon={faFileAlt}>
+              <CollapsableNavItem eventKey="examples/" title="Salas" icon={faFileAlt}>
                 <NavItem title="Sign In" link={Routes.Signin.path} />
                 <NavItem title="Sign Up" link={Routes.Signup.path} />
                 <NavItem title="Forgot password" link={Routes.ForgotPassword.path} />
@@ -121,7 +121,7 @@ export default (props = {}) => {
 
               <Dropdown.Divider className="my-3 border-indigo" />
 
-              <CollapsableNavItem eventKey="documentation/" title="Getting Started" icon={faBook}>
+              <CollapsableNavItem eventKey="documentation/" title="Configurações" icon={faBook}>
                 <NavItem title="Overview" link={Routes.DocsOverview.path} />
                 <NavItem title="Download" link={Routes.DocsDownload.path} />
                 <NavItem title="Quick Start" link={Routes.DocsQuickStart.path} />
