@@ -13,8 +13,15 @@ export default () => {
     <>
       <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
         <Dropdown className="btn-toolbar">
+          
+          <h1>Dashboard</h1>
+          
           {/* <Dropdown.Toggle as={Button} variant="primary" size="sm" className="me-2">
             <FontAwesomeIcon icon={faPlus} className="me-2" />Adicionar turma 
+          </Dropdown.Toggle>
+
+          <Dropdown.Toggle as={Button} variant="primary" size="sm" className="me-2">
+            <FontAwesomeIcon icon={faPlus} className="me-2" />Adicionar Sensor
           </Dropdown.Toggle> */}
           <Dropdown.Menu className="dashboard-dropdown dropdown-menu-left mt-2">
             {/* <Dropdown.Item className="fw-bold">
@@ -36,8 +43,14 @@ export default () => {
         </Dropdown>
 
         <ButtonGroup>
-          <Button variant="outline-primary" size="sm">Editar</Button>
-          <Button variant="outline-primary" size="sm">Export</Button>
+        <Dropdown.Toggle as={Button} variant="primary" size="sm" className="me-2">
+            <FontAwesomeIcon icon={faPlus} className="me-2" />Editar meu perfil
+          </Dropdown.Toggle>
+        
+          <Dropdown.Toggle as={Button} variant="primary" size="sm" className="me-2">
+            <FontAwesomeIcon icon={faPlus} className="me-2" />Adicionar turma 
+          </Dropdown.Toggle>
+          
         </ButtonGroup>
       </div>
 
