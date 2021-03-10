@@ -28,8 +28,8 @@ const RestoPagina = (props) => {
 
 	const [data, setData] = useState({
 		// Fixed data
-		user_type: 			user_type,
-		user_id: 			user_id,
+		"user_type": 			user_type,
+		"user_id": 			user_id,
 
 		// Form data
 		firstname: 			'',
@@ -48,6 +48,14 @@ const RestoPagina = (props) => {
 
 	});
 
+	const handleChange = (e) => {
+        const {name , value} = e.target   
+        setState(prevState => ({
+            ...prevState,
+            [name] : value
+        }))
+    }
+
 	return (
 		<div className="mb-4 mb-lg-0 bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
 
@@ -61,7 +69,8 @@ const RestoPagina = (props) => {
 							required 
 							type='text' 
 							name='firstname' 
-							placeholder='Nome' 
+							placeholder='Nome'
+							value={data.firstname} 
 							onChange={teste} 
 						/>
 					</InputGroup>
@@ -72,7 +81,8 @@ const RestoPagina = (props) => {
 						<Form.Control 
 							required 
 							type='text' 
-							name='lastname' 
+							name='lastname'  
+							value={data.lastname} 
 							placeholder='Sobrenome' 
 							onChange={teste} 
 						/>
@@ -86,6 +96,7 @@ const RestoPagina = (props) => {
 							required 
 							type='text' 
 							name='email' 
+							value={data.email} 
 							placeholder='professor@email.com' 
 							onChange={teste} 
 						/>
@@ -98,6 +109,7 @@ const RestoPagina = (props) => {
 							required 
 							type='tel' 
 							name='phone' 
+							value={data.phone} 
 							min='9' 
 							max='12' 
 							placeholder='67 9999-9999' 
@@ -112,6 +124,7 @@ const RestoPagina = (props) => {
 							required 
 							type='date' 
 							name='birthdate' 
+							value={data.birthdate} 
 							onChange={teste} 
 						/>	
 					</InputGroup>
@@ -132,6 +145,7 @@ const RestoPagina = (props) => {
 							required
 							type='text'
 							name='state'
+							value={data.state} 
 							onChange={teste} 
 						/>
 					</InputGroup>
@@ -143,6 +157,7 @@ const RestoPagina = (props) => {
 							required 
 							type='text' 
 							name='city' 
+							value={data.city} 
 							onChange={teste} 
 						/>
 					</InputGroup>
@@ -163,6 +178,7 @@ const RestoPagina = (props) => {
 							required 
 							type='text' 
 							name='siap' 
+							value={data.siap} 
 							onChange={teste} 
 						/>
 					</InputGroup>
@@ -181,6 +197,7 @@ const RestoPagina = (props) => {
 						<Form.Control 
 							required 
 							type="text" 
+							value={data['teacher_code']} 
 							placeholder="CODIGO" 
 						/>
 					</InputGroup>   
