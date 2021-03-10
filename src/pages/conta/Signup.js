@@ -18,21 +18,33 @@ const teste = (e) => {
 }
 
 const restoPagina = () => {
+	// consts for post request
+	const user_type = 1;
+	const user_id = 1;
 
+	// useStates for form
+	const [name, setName] = useState('');
+	const [lastname, setLastname] = useState('');
+	const [email, setEmail] = useState('');
+	const [phone, setPhone] = useState('');
+	const [birthdate, setBirthdate ] = useState('');
+	const [sex, setSex] = useState('');
+	const [state, setState] = useState('');
+	const [city, setCity] = useState('');
+	const [academicDegree, setAcademicDegree] = useState('');
+	const [siap, setSiap] = useState(0);
+	const [school, setSchool] = useState(0);
+	const [teacherCode, setTeacherCode] = useState('');
+	/*
+	useState for photo
+	const [] = useState(); 
+	*/
 	return (
 		<div className="mb-4 mb-lg-0 bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
 
 			<FormHeader  text="Cadastro"/>
 
 			<Form className="mt-4" onSubmit={teste}>
-
-				<Form.Group>
-					<Form.Control type='hidden' value='1' name='user_type'/>
-				</Form.Group>
-
-				<Form.Group>
-					<Form.Control type='hidden' value='1' name='user_id'/>
-				</Form.Group>
 
 				<FormInput id='name' className='' label='Nome' inputComponent={
 					() => {
