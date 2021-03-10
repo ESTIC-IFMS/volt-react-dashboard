@@ -37,30 +37,22 @@ function PasswordConfirmer() {
 		
 		<div>
 
-	    <FormInput id='password' className='' label='Sua Senha' inputComponent={
-      () => {
-        return (
-          <InputGroup>
-            <Form.Control required type="password" onChange={setPassword} placeholder="Senha" />
-          </InputGroup>   
-        )
-      }
-    }/>
+			<FormInput id='password' className='' label='Sua Senha'>
+				<InputGroup>
+					<Form.Control required type="password" onChange={setPassword} placeholder="Senha" />
+				</InputGroup>   
+			</FormInput>
 
-    <FormInput id='password_confirm' className='' label='Confirme sua senha' inputComponent={
-      () => {
-        return (
-          <InputGroup>
-            <Form.Control required type="password" isValid={passwordOkay} isInvalid={!passwordOkay} placeholder="Senha" onChange={setPasswordConfirm}/>
+			<FormInput id='password_confirm' className='' label='Confirme sua senha'>
+				<InputGroup>
+					<Form.Control required type="password" isValid={passwordOkay} isInvalid={!passwordOkay} placeholder="Senha" onChange={setPasswordConfirm}/>
 
-			<Form.Control.Feedback type="invalid">Senhas diferentes.</Form.Control.Feedback>
-			<Form.Control.Feedback type="valid">Tudo certo!</Form.Control.Feedback>
-          </InputGroup>   
-        )
-      }
-    }/>
-    </div>
-)
+					<Form.Control.Feedback type="invalid">Senhas diferentes.</Form.Control.Feedback>
+					<Form.Control.Feedback type="valid">Tudo certo!</Form.Control.Feedback>
+				</InputGroup>   
+			</FormInput>
+		</div>
+	)	
 }
 
 export default PasswordConfirmer;
