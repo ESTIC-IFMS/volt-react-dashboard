@@ -26,39 +26,27 @@ const RestoPagina = (props) => {
 	const user_type = 1;
 	const user_id = 1;
 
-	// useStates for form
-	const [firstname, setFirstname] 						= useState('');
-	const [lastname, setLastname] 							= useState('');
-	const [phone, setPhone] 								= useState('');
-	const [email, setEmail] 								= useState('');
-	const [birthdate, setBirthdate ] 						= useState('');
-	const [sex, setSex] 									= useState('');
-	const [state, setState] 								= useState('');
-	const [city, setCity] 									= useState('');
-	const [academicDegree, setAcademicDegree] 				= useState('');
-	const [siap, setSiap] 									= useState(0);
-	const [school, setSchool] 								= useState(0);
-	const [teacherCode, setTeacherCode] 					= useState('');
+	const [data, setData] = useState({
+		// Fixed data
+		user_type: 			user_type,
+		user_id: 			user_id,
 
-	/*
-	useState for photo
-	const [] = useState(); 
-	*/
+		// Form data
+		firstname: 			'',
+		lastname: 			'',
+		phone: 				'',
+		email:  			'',
+		birthdate:  		'',
+		genre: 				'',
+		state:  			'',
+		city: 				'',
+		"academic_degree": 	'',
+		siap: 				'',
+		"school_id": 		-1,
+		"teacher_code":  	'',
+		//"photo": 			
 
-	const data = {
-		firstname, 
-		lastname, 
-		phone, 
-		email, 
-		birthdate, 
-		sex, 
-		state, 
-		city,
-		academicDegree,
-		siap,
-		school, 
-		teacherCode
-	}
+	});
 
 	return (
 		<div className="mb-4 mb-lg-0 bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
