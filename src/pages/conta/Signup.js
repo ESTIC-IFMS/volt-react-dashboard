@@ -21,7 +21,7 @@ function sendCreateAccountResquest (data) {
 	//...
 }
 
-const restoPagina = () => {
+const RestoPagina = (props) => {
 	// consts for post request
 	const user_type = 1;
 	const user_id = 1;
@@ -234,6 +234,8 @@ const restoPagina = () => {
 export default () => {
   return (
     
-    <SignPage restoPagina={restoPagina}/>
+    <SignPage>
+    	<RestoPagina/>
+    </SignPage>
   );
 };

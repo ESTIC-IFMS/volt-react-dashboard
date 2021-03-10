@@ -9,7 +9,7 @@ import { Col, Row, Card, Container } from '@themesberg/react-bootstrap';
 import { Routes } from "../routes";
 import BgImage from "../assets/img/illustrations/signin.svg";
 
-export default ({restoPagina})=>{
+export default (props)=>{
 	return (
 		<main>
 			<section className="d-flex align-items-center my-5 mt-lg-6 mb-lg-5">
@@ -23,7 +23,7 @@ export default ({restoPagina})=>{
 					<Row className="justify-content-center form-bg-image" style={{ backgroundImage: `url(${BgImage})` }}>
 						<Col xs={12} className="d-flex align-items-center justify-content-center">
 
-						{restoPagina()}
+						{props.children}
 
 						</Col>
 					</Row>
