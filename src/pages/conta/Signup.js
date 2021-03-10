@@ -200,6 +200,7 @@ const RestoPagina = (props) => {
 							name="teacher_code"
 							value={data['teacher_code']} 
 							placeholder="CODIGO" 
+							onChange={handleChange}
 						/>
 					</InputGroup>   
 				</FormInput>
