@@ -67,142 +67,92 @@ const RestoPagina = (props) => {
 
 			<Form className="mt-4">
 
-				<FormInput id='name' className='' label='Nome' inputComponent={
-					() => {
-						return(
-							<InputGroup >            
-								<Form.Control required type='text' name='firstname' placeholder='Nome' onChange={teste} />
-							</InputGroup>
-						)
-					}
-				} />
+				<FormInput id='name' className='' label='Nome' >
+					<InputGroup >            
+						<Form.Control required type='text' name='firstname' placeholder='Nome' onChange={teste} />
+					</InputGroup>
+				</FormInput>
 
-				<FormInput id='lastname' className='' label='Sobrenome' inputComponent={
-					() => {
-						return(
-							<InputGroup>            
-								<Form.Control required type='text' name='lastname' placeholder='Sobrenome' onChange={teste} />
-							</InputGroup>
-						)
-					}
-				} />
+				<FormInput id='lastname' className='' label='Sobrenome'}>
+					<InputGroup>            
+						<Form.Control required type='text' name='lastname' placeholder='Sobrenome' onChange={teste} />
+					</InputGroup>	
+				</FormInput>
 
-				<FormInput id='email' className='' label='Email' inputComponent={
-					() => {
-						return(
-							<InputGroup>
-								<Form.Control required type='text' name='email' placeholder='professor@email.com' onChange={teste} />
-							</InputGroup>
-						)
-					}
-				} />
 
-				<FormInput id='phone' className='' label='Telefone/Celular' inputComponent={
-					() => {
-						return(
-							<InputGroup>
-								<Form.Control required type='tel' name='phone' min='9' max='12' placeholder='67 9999-9999' onChange={teste} />
-							</InputGroup>
-						)
-					}
-				} />
+				<FormInput id='email' className='' label='Email'>
+					<InputGroup>
+						<Form.Control required type='text' name='email' placeholder='professor@email.com' onChange={teste} />
+					</InputGroup>
+				</FormInput>
 
-				<FormInput id='birthdate' className='' label='Data de Nascimento' inputComponent={
-					() => {
-						return(
-						<InputGroup>
-							<Form.Control required type='date' name='birthdate' onChange={teste} />
-						</InputGroup>
-						)
-					}
-				} />
+				<FormInput id='phone' className='' label='Telefone/Celular'/>
+					<InputGroup>
+						<Form.Control required type='tel' name='phone' min='9' max='12' placeholder='67 9999-9999' onChange={teste} />
+					</InputGroup>
+				<FormInput>
 
-				<FormInput id='sex' className='' label='Sexo' inputComponent={
-					() => {
-						return (
-							<Form.Select required name='genre' onChange={teste}>
-								<option defaultValue value='0'>Selecione...</option>
-								<option value='Masculino'>Masculino</option>
-								<option value='Feminino'>Feminino</option>
-							</Form.Select>    
-						)
-					}
-				}/>
+				<FormInput id='birthdate' className='' label='Data de Nascimento'  >
+					<InputGroup>
+						<Form.Control required type='date' name='birthdate' onChange={teste} />	
+					</InputGroup>
+				</FormInput>
 
-				<FormInput id='state' className='' label='Estado' inputComponent={
-					() => {
-						return (
-							<InputGroup>
-								<Form.Control required type='text' name='state' onChange={teste} />
-							</InputGroup>
-						)
-					}
-				}/>
+				<FormInput id='sex' className='' label='Sexo'>
+					<Form.Select required name='genre' onChange={teste}>
+						<option defaultValue value='0'>Selecione...</option>
+						<option value='Masculino'>Masculino</option>
+						<option value='Feminino'>Feminino</option>
+					</Form.Select>    
+				</FormInput>
 
-				<FormInput id='city' className='' label='Cidade' inputComponent={
-					() => {
-						return (
-						<InputGroup>
-							<Form.Control required type='text' name='city' onChange={teste} />
-						</InputGroup>
-						)
-					}
-				}/>
 
-				<FormInput id='academic_degree' className='' label='Formação Academica' inputComponent={
-					() => {
-						return (
-							<Form.Select required name='academic_degree' onChange={teste}>
-								<option defaultValue value='0'>Selecione...</option>
-								<option value='Graduação'>Graduação</option>
-								<option value='Mestrado'>Mestrado</option>
-								<option value='Doutorado'>Doutorado</option>
-							</Form.Select>    
-						)
-					}
-				}/>
+				<FormInput id='state' className='' label='Estado'>
+					<InputGroup>
+						<Form.Control required type='text' name='state' onChange={teste} />
+					</InputGroup>
+				</FormInput>
 
-				<FormInput id='siap' className='' label='SIAP' inputComponent={
-					() => {
-						return (
-							<InputGroup>
-								<Form.Control required type='text' name='siap' onChange={teste} />
-							</InputGroup>
-						)
-					}
-				}/>
+				<FormInput id='city' className='' label='Cidade'>
+					<InputGroup>
+						<Form.Control required type='text' name='city' onChange={teste} />
+					</InputGroup>
+				</FormInput>
 
-				<FormInput id='school' className='' label='Escola' inputComponent={
-					() => {
-						return (
-							<Form.Select required name='school_id' onChange={teste}>
-								<option defaultValue value='0'>Selecione...</option>
-								<option value={1}>Escola Tal Tal</option>
-								<option value={2}>Escola de Tal Tel</option>
-							</Form.Select>    
-						)
-					}
-				}/>
+				<FormInput id='academic_degree' className='' label='Formação Academica'>
+					<Form.Select required name='academic_degree' onChange={teste}>
+						<option defaultValue value='0'>Selecione...</option>
+						<option value='Graduação'>Graduação</option>
+						<option value='Mestrado'>Mestrado</option>
+						<option value='Doutorado'>Doutorado</option>
+					</Form.Select>    	
+				</FormInput>
 
-				<FormInput id='teacher_code' className='' label='Codigo do Professor' inputComponent={
-					() => {
-						return (
-							<InputGroup>
-								<Form.Control required type="text" placeholder="CODIGO" />
-							</InputGroup>   
-						)
-					}
-				}/>
+				<FormInput id='siap' className='' label='SIAP'>
+					<InputGroup>
+						<Form.Control required type='text' name='siap' onChange={teste} />
+					</InputGroup>
+				</FormInput>
+
+				<FormInput id='school' className='' label='Escola'>
+					<Form.Select required name='school_id' onChange={teste}>
+						<option defaultValue value='0'>Selecione...</option>
+						<option value={1}>Escola Tal Tal</option>
+						<option value={2}>Escola de Tal Tel</option>
+					</Form.Select>    
+				</FormInput>
+
+				<FormInput id='teacher_code' className='' label='Codigo do Professor' >
+					<InputGroup>
+						<Form.Control required type="text" placeholder="CODIGO" />
+					</InputGroup>   
+				</FormInput>
 
 				<PasswordConfirmer/>
 
-				<FormInput id='photo' className='' label='Foto' inputComponent={
-					() => {
-						return (
-							<Form.Control required type="file" />
-						)
-					}
-				}/>
+				<FormInput id='photo' className='' label='Foto'>
+					<Form.Control required type="file" />
+				</FormInput>
 
 				<FormCheck type="checkbox" className="d-flex mb-4">
 					<FormCheck.Input required id="terms" className="me-2" />
