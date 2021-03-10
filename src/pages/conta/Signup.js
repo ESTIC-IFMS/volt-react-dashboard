@@ -69,32 +69,63 @@ const RestoPagina = (props) => {
 
 				<FormInput id='name' className='' label='Nome' >
 					<InputGroup >            
-						<Form.Control required type='text' name='firstname' placeholder='Nome' onChange={teste} />
+						<Form.Control 
+							required 
+							type='text' 
+							name='firstname' 
+							placeholder='Nome' 
+							onChange={teste} 
+						/>
 					</InputGroup>
 				</FormInput>
 
 				<FormInput id='lastname' className='' label='Sobrenome'}>
 					<InputGroup>            
-						<Form.Control required type='text' name='lastname' placeholder='Sobrenome' onChange={teste} />
+						<Form.Control 
+							required 
+							type='text' 
+							name='lastname' 
+							placeholder='Sobrenome' 
+							onChange={teste} 
+						/>
 					</InputGroup>	
 				</FormInput>
 
 
 				<FormInput id='email' className='' label='Email'>
 					<InputGroup>
-						<Form.Control required type='text' name='email' placeholder='professor@email.com' onChange={teste} />
+						<Form.Control 
+							required 
+							type='text' 
+							name='email' 
+							placeholder='professor@email.com' 
+							onChange={teste} 
+						/>
 					</InputGroup>
 				</FormInput>
 
 				<FormInput id='phone' className='' label='Telefone/Celular'/>
 					<InputGroup>
-						<Form.Control required type='tel' name='phone' min='9' max='12' placeholder='67 9999-9999' onChange={teste} />
+						<Form.Control 
+							required 
+							type='tel' 
+							name='phone' 
+							min='9' 
+							max='12' 
+							placeholder='67 9999-9999' 
+							onChange={teste}
+						/>
 					</InputGroup>
 				<FormInput>
 
 				<FormInput id='birthdate' className='' label='Data de Nascimento'  >
 					<InputGroup>
-						<Form.Control required type='date' name='birthdate' onChange={teste} />	
+						<Form.Control 
+							required 
+							type='date' 
+							name='birthdate' 
+							onChange={teste} 
+						/>	
 					</InputGroup>
 				</FormInput>
 
@@ -109,13 +140,23 @@ const RestoPagina = (props) => {
 
 				<FormInput id='state' className='' label='Estado'>
 					<InputGroup>
-						<Form.Control required type='text' name='state' onChange={teste} />
+						<Form.Control 
+							required
+							type='text'
+							name='state'
+							onChange={teste} 
+						/>
 					</InputGroup>
 				</FormInput>
 
 				<FormInput id='city' className='' label='Cidade'>
 					<InputGroup>
-						<Form.Control required type='text' name='city' onChange={teste} />
+						<Form.Control 
+							required 
+							type='text' 
+							name='city' 
+							onChange={teste} 
+						/>
 					</InputGroup>
 				</FormInput>
 
@@ -130,7 +171,12 @@ const RestoPagina = (props) => {
 
 				<FormInput id='siap' className='' label='SIAP'>
 					<InputGroup>
-						<Form.Control required type='text' name='siap' onChange={teste} />
+						<Form.Control 
+							required 
+							type='text' 
+							name='siap' 
+							onChange={teste} 
+						/>
 					</InputGroup>
 				</FormInput>
 
@@ -144,14 +190,21 @@ const RestoPagina = (props) => {
 
 				<FormInput id='teacher_code' className='' label='Codigo do Professor' >
 					<InputGroup>
-						<Form.Control required type="text" placeholder="CODIGO" />
+						<Form.Control 
+							required 
+							type="text" 
+							placeholder="CODIGO" 
+						/>
 					</InputGroup>   
 				</FormInput>
 
 				<PasswordConfirmer/>
 
 				<FormInput id='photo' className='' label='Foto'>
-					<Form.Control required type="file" />
+					<Form.Control 
+						required 
+						type="file" 
+					/>
 				</FormInput>
 
 				<FormCheck type="checkbox" className="d-flex mb-4">
