@@ -11,11 +11,6 @@ import FormInput from "../../reciclecode/FormInput.js";
 import FormHeader from "../../reciclecode/FormHeader.js";
 import SignPage from "../../reciclecode/SignPage.js";
 import PasswordConfirmer from "../../components/form/PasswordConfirmer.js"
-// Posteriormente, transformar a senha, confirmar senha em um componente
-
-const teste = (e) => {
-  console.log(e.target.value)
-}
 
 function sendCreateAccountResquest (data) {
 	//...
