@@ -71,7 +71,7 @@ const RestoPagina = (props) => {
 							name='firstname' 
 							placeholder='Nome'
 							value={data.firstname} 
-							onChange={teste} 
+							onChange={handleChange} 
 						/>
 					</InputGroup>
 				</FormInput>
@@ -84,7 +84,7 @@ const RestoPagina = (props) => {
 							name='lastname'  
 							value={data.lastname} 
 							placeholder='Sobrenome' 
-							onChange={teste} 
+							onChange={handleChange} 
 						/>
 					</InputGroup>	
 				</FormInput>
@@ -98,7 +98,7 @@ const RestoPagina = (props) => {
 							name='email' 
 							value={data.email} 
 							placeholder='professor@email.com' 
-							onChange={teste} 
+							onChange={handleChange} 
 						/>
 					</InputGroup>
 				</FormInput>
@@ -113,7 +113,7 @@ const RestoPagina = (props) => {
 							min='9' 
 							max='12' 
 							placeholder='67 9999-9999' 
-							onChange={teste}
+							onChange={handleChange}
 						/>
 					</InputGroup>
 				<FormInput>
@@ -125,13 +125,13 @@ const RestoPagina = (props) => {
 							type='date' 
 							name='birthdate' 
 							value={data.birthdate} 
-							onChange={teste} 
+							onChange={handleChange} 
 						/>	
 					</InputGroup>
 				</FormInput>
 
 				<FormInput id='sex' className='' label='Sexo'>
-					<Form.Select required name='genre' onChange={teste}>
+					<Form.Select required name='genre' onChange={handleChange}>
 						<option defaultValue value='0'>Selecione...</option>
 						<option value='Masculino'>Masculino</option>
 						<option value='Feminino'>Feminino</option>
@@ -146,7 +146,7 @@ const RestoPagina = (props) => {
 							type='text'
 							name='state'
 							value={data.state} 
-							onChange={teste} 
+							onChange={handleChange} 
 						/>
 					</InputGroup>
 				</FormInput>
@@ -158,13 +158,13 @@ const RestoPagina = (props) => {
 							type='text' 
 							name='city' 
 							value={data.city} 
-							onChange={teste} 
+							onChange={handleChange} 
 						/>
 					</InputGroup>
 				</FormInput>
 
 				<FormInput id='academic_degree' className='' label='Formação Academica'>
-					<Form.Select required name='academic_degree' onChange={teste}>
+					<Form.Select required name='academic_degree' onChange={handleChange}>
 						<option defaultValue value='0'>Selecione...</option>
 						<option value='Graduação'>Graduação</option>
 						<option value='Mestrado'>Mestrado</option>
@@ -179,13 +179,13 @@ const RestoPagina = (props) => {
 							type='text' 
 							name='siap' 
 							value={data.siap} 
-							onChange={teste} 
+							onChange={handleChange} 
 						/>
 					</InputGroup>
 				</FormInput>
 
 				<FormInput id='school' className='' label='Escola'>
-					<Form.Select required name='school_id' onChange={teste}>
+					<Form.Select required name='school_id' onChange={handleChange}>
 						<option defaultValue value='0'>Selecione...</option>
 						<option value={1}>Escola Tal Tal</option>
 						<option value={2}>Escola de Tal Tel</option>
@@ -197,6 +197,7 @@ const RestoPagina = (props) => {
 						<Form.Control 
 							required 
 							type="text" 
+							name="teacher_code"
 							value={data['teacher_code']} 
 							placeholder="CODIGO" 
 						/>
