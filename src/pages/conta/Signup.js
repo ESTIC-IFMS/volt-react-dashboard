@@ -220,21 +220,21 @@ const RestoPagina = (props) => {
 				<FormCheck type="checkbox" className="d-flex mb-4">
 					<FormCheck.Input required id="terms" className="me-2" />
 					<FormCheck.Label htmlFor="terms">
-						I agree to the <Card.Link>terms and conditions</Card.Link>
+						Eu concordo com os <Card.Link>Termos e Condições</Card.Link>
 					</FormCheck.Label>
 				</FormCheck>
 
 				<Button variant="primary" className="w-100">
-					Sign up
+					Cadastrar
 				</Button>
 
 			</Form>
 
 			<div className="d-flex justify-content-center align-items-center mt-4">
 				<span className="fw-normal">
-					Already have an account?
+					Ja tem uma conta?
 					<Card.Link as={Link} to={Routes.Signin.path} className="fw-bold">
-						{` Login here `}
+						{` Logue aqui `}
 					</Card.Link>
 				</span>
 			</div>
