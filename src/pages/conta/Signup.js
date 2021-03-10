@@ -76,7 +76,7 @@ const RestoPagina = (props) => {
 					</InputGroup>
 				</FormInput>
 
-				<FormInput id='lastname' className='' label='Sobrenome'}>
+				<FormInput id='lastname' className='' label='Sobrenome'>
 					<InputGroup>            
 						<Form.Control 
 							required 
