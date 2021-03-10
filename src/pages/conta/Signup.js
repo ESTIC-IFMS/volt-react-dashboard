@@ -50,7 +50,7 @@ const RestoPagina = (props) => {
 
 	const handleChange = (e) => {
         const {name , value} = e.target   
-        setState(prevState => ({
+        setData(prevState => ({
             ...prevState,
             [name] : value
         }))
@@ -103,7 +103,7 @@ const RestoPagina = (props) => {
 					</InputGroup>
 				</FormInput>
 
-				<FormInput id='phone' className='' label='Telefone/Celular'/>
+				<FormInput id='phone' className='' label='Telefone/Celular'>
 					<InputGroup>
 						<Form.Control 
 							required 
@@ -116,7 +116,7 @@ const RestoPagina = (props) => {
 							onChange={handleChange}
 						/>
 					</InputGroup>
-				<FormInput>
+				</FormInput>
 
 				<FormInput id='birthdate' className='' label='Data de Nascimento'  >
 					<InputGroup>
