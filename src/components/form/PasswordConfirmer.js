@@ -35,8 +35,6 @@ function PasswordConfirmer({whenConfirm}) {
 		}else{
 			setPasswordOkay(value);
 		}
-
-		console.log(`${state.password}->${state.passwordConfirm}, ${passwordOkay}`)
 	}
 
 	return (

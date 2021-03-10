@@ -58,7 +58,6 @@ const RestoPagina = (props) => {
     }
 
     function handlePasswordOkay (value) {
-    	console.log(value)
     	setData(prevState => ({
             ...prevState,
             ['password'] : value
