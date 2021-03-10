@@ -44,6 +44,7 @@ const RestoPagina = (props) => {
 		siap: 				'',
 		"school_id": 		-1,
 		"teacher_code":  	'',
+		password: 			'',
 		//"photo": 			
 
 	});
@@ -55,6 +56,14 @@ const RestoPagina = (props) => {
             [name] : value
         }))
     }
+
+    function handlePasswordOkay (value) {
+    	console.log(value)
+    	setData(prevState => ({
+            ...prevState,
+            ['password'] : value
+        }))
+    } 
 
 	return (
 		<div className="mb-4 mb-lg-0 bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
@@ -205,7 +214,7 @@ const RestoPagina = (props) => {
 					</InputGroup>   
 				</FormInput>
 
-				<PasswordConfirmer/>
+				<PasswordConfirmer whenConfirm={handlePasswordOkay}/>
 
 				<FormInput id='photo' className='' label='Foto'>
 					<Form.Control 

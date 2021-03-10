@@ -8,10 +8,13 @@ import FormInput from "../../reciclecode/FormInput.js";
 
 const state = { password: '', passwordConfirm:''};
 
-function PasswordConfirmer() {
+function PasswordConfirmer({whenConfirm}) {
 	const [passwordOkay, setPasswordOkay] = useState(false);
 	
-	
+	const setPasswordOkayAsTrue = () => {
+		setPasswordOkay(true)
+		whenConfirm(state.password)
+	}	
 
 	const setPassword = (event) => {
 		
@@ -27,8 +30,11 @@ function PasswordConfirmer() {
 	}
 
 	const handleConfirmPassword = (value) => {
-		
-		setPasswordOkay(value);
+		if(value){
+			setPasswordOkayAsTrue()
+		}else{
+			setPasswordOkay(value);
+		}
 
 		console.log(`${state.password}->${state.passwordConfirm}, ${passwordOkay}`)
 	}
